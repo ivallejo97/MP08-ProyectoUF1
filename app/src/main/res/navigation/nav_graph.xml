@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/info1">
+
+    <fragment
+        android:id="@+id/info1"
+        android:name="com.example.mp08_proyectouf1.Info1"
+        android:label="fragment_info1"
+        tools:layout="@layout/fragment_info1" >
+        <action
+            android:id="@+id/action_info1_to_info2"
+            app:destination="@id/info2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_info1_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.example.mp08_proyectouf1.Info2"
+        android:label="fragment_info2"
+        tools:layout="@layout/fragment_info2" >
+        <action
+            android:id="@+id/action_info2_to_info3"
+            app:destination="@id/info3"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_info2_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/info3"
+        android:name="com.example.mp08_proyectouf1.Info3"
+        android:label="fragment_info3"
+        tools:layout="@layout/fragment_info3" >
+        <action
+            android:id="@+id/action_info3_to_info4"
+            app:destination="@id/info4"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_info3_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <fragment
+        android:id="@+id/info4"
+        android:name="com.example.mp08_proyectouf1.Info4"
+        android:label="fragment_info4"
+        tools:layout="@layout/fragment_info4" >
+        <action
+            android:id="@+id/action_info4_to_inicio"
+            app:destination="@id/inicio" />
+    </fragment>
+    <activity
+        android:id="@+id/inicio"
+        android:name="com.example.mp08_proyectouf1.Inicio"
+        android:label="activity_inicio"
+        tools:layout="@layout/activity_inicio" />
+
+
+</navigation>

@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MejoresPromediosGoleadores">
+
+        <!-- TODO: Update blank fragment layout -->
+        <View
+            android:id="@+id/jugador1Promedio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FBFCF9"
+            android:background="@drawable/styles_edittext"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoJugador"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="10dp"
+            android:src="@drawable/haaland"
+            app:layout_constraintTop_toTopOf="@id/jugador1Promedio"
+            app:layout_constraintLeft_toLeftOf="@id/jugador1Promedio" />
+
+        <TextView
+            android:id="@+id/partidosJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="PJ"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador1Promedio"
+            app:layout_constraintLeft_toRightOf="@id/fotoJugador"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="32"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJ1"
+            app:layout_constraintLeft_toLeftOf="@id/partidosJ1"
+            app:layout_constraintRight_toRightOf="@id/partidosJ1"/>
+
+        <TextView
+            android:id="@+id/golesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Goles"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador1Promedio"
+            app:layout_constraintLeft_toRightOf="@id/partidosJ1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="32"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/golesJ1"
+            app:layout_constraintRight_toRightOf="@id/golesJ1"/>
+
+        <TextView
+            android:id="@+id/promedioJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Promedio"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador1Promedio"
+            app:layout_constraintLeft_toRightOf="@id/golesJ1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="1 G/P"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioJ1"
+            app:layout_constraintLeft_toLeftOf="@id/promedioJ1"
+            app:layout_constraintRight_toRightOf="@id/promedioJ1"/>
+
+        <TextView
+            android:id="@+id/golPorMinutosJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:text="Gol cada X minutos"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador"
+            app:layout_constraintRight_toRightOf="@id/jugador1Promedio"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:text="90 Minutos"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/styles_estadisticas"
+            app:layout_constraintTop_toBottomOf="@id/golPorMinutosJ1"
+            app:layout_constraintLeft_toLeftOf="@id/golPorMinutosJ1"
+            app:layout_constraintRight_toRightOf="@id/golPorMinutosJ1"/>
+
+        <TextView
+            android:id="@+id/nombreJugador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Erling Haaland"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador"
+            app:layout_constraintLeft_toLeftOf="@id/fotoJugador" />
+
+
+        <ImageView
+            android:id="@+id/escudoEquipo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/manchester_city"
+            app:layout_constraintTop_toTopOf="@id/nombreEquipoJ1"
+            app:layout_constraintLeft_toRightOf="@id/nombreEquipoJ1"
+            app:layout_constraintBottom_toBottomOf="@id/nombreEquipoJ1"/>
+
+        <TextView
+            android:id="@+id/nombreEquipoJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Manchester City"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/nombreJugador"
+            app:layout_constraintLeft_toLeftOf="@id/jugador1Promedio" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:elevation="11dp"
+            app:layout_constraintTop_toTopOf="@id/fotoTop1"
+            app:layout_constraintLeft_toLeftOf="@id/fotoTop1"
+            app:layout_constraintRight_toRightOf="@id/fotoTop1"
+            app:layout_constraintBottom_toBottomOf="@id/fotoTop1"/>
+
+        <ImageView
+            android:id="@+id/fotoTop1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/escudo"
+            app:layout_constraintTop_toTopOf="@id/jugador1Promedio"
+            app:layout_constraintRight_toRightOf="@id/jugador1Promedio"/>
+
+        <View
+            android:id="@+id/jugador2Promedio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FBFCF9"
+            android:background="@drawable/styles_edittext"
+            app:layout_constraintTop_toBottomOf="@id/jugador1Promedio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoJugador2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="10dp"
+            android:src="@drawable/mbappe"
+            app:layout_constraintTop_toTopOf="@id/jugador2Promedio"
+            app:layout_constraintLeft_toLeftOf="@id/jugador2Promedio" />
+
+        <TextView
+            android:id="@+id/partidosJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="PJ"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador2Promedio"
+            app:layout_constraintLeft_toRightOf="@id/fotoJugador2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="28"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJ2"
+            app:layout_constraintLeft_toLeftOf="@id/partidosJ2"
+            app:layout_constraintRight_toRightOf="@id/partidosJ2"/>
+
+        <TextView
+            android:id="@+id/golesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Goles"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador2Promedio"
+            app:layout_constraintLeft_toRightOf="@id/partidosJ2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="27"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/golesJ2"
+            app:layout_constraintRight_toRightOf="@id/golesJ2"/>
+
+        <TextView
+            android:id="@+id/promedioJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Promedio"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador2Promedio"
+            app:layout_constraintLeft_toRightOf="@id/golesJ2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="0,9 G/P"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioJ2"
+            app:layout_constraintLeft_toLeftOf="@id/promedioJ2"
+            app:layout_constraintRight_toRightOf="@id/promedioJ2"/>
+
+        <TextView
+            android:id="@+id/golPorMinutosJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:text="Gol cada X minutos"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador2"
+            app:layout_constraintRight_toRightOf="@id/jugador2Promedio"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:text="93 Minutos"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/styles_estadisticas"
+            app:layout_constraintTop_toBottomOf="@id/golPorMinutosJ2"
+            app:layout_constraintLeft_toLeftOf="@id/golPorMinutosJ2"
+            app:layout_constraintRight_toRightOf="@id/golPorMinutosJ2"/>
+
+        <TextView
+            android:id="@+id/nombreJugador2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Kylian Mbáppe"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador2"
+            app:layout_constraintLeft_toLeftOf="@id/fotoJugador2"/>
+
+
+        <ImageView
+            android:id="@+id/escudoEquipo2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/psg"
+            app:layout_constraintTop_toTopOf="@id/nombreEquipoJ2"
+            app:layout_constraintLeft_toRightOf="@id/nombreEquipoJ2"
+            app:layout_constraintBottom_toBottomOf="@id/nombreEquipoJ2"/>
+
+        <TextView
+            android:id="@+id/nombreEquipoJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="PSG"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/nombreJugador2"
+            app:layout_constraintLeft_toLeftOf="@id/jugador2Promedio" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:elevation="11dp"
+            app:layout_constraintTop_toTopOf="@id/fotoTop2"
+            app:layout_constraintLeft_toLeftOf="@id/fotoTop2"
+            app:layout_constraintRight_toRightOf="@id/fotoTop2"
+            app:layout_constraintBottom_toBottomOf="@id/fotoTop2"/>
+
+        <ImageView
+            android:id="@+id/fotoTop2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/escudo"
+            app:layout_constraintTop_toTopOf="@id/jugador2Promedio"
+            app:layout_constraintRight_toRightOf="@id/jugador2Promedio"/>
+
+
+        <View
+            android:id="@+id/jugador3Promedio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FBFCF9"
+            android:background="@drawable/styles_edittext"
+            app:layout_constraintTop_toBottomOf="@id/jugador2Promedio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoJugador3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="10dp"
+            android:src="@drawable/lewandowski"
+            app:layout_constraintTop_toTopOf="@id/jugador3Promedio"
+            app:layout_constraintLeft_toLeftOf="@id/jugador3Promedio" />
+
+        <TextView
+            android:id="@+id/partidosJ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="PJ"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador3Promedio"
+            app:layout_constraintLeft_toRightOf="@id/fotoJugador3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="30"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJ3"
+            app:layout_constraintLeft_toLeftOf="@id/partidosJ3"
+            app:layout_constraintRight_toRightOf="@id/partidosJ3"/>
+
+        <TextView
+            android:id="@+id/golesJ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Goles"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador3Promedio"
+            app:layout_constraintLeft_toRightOf="@id/partidosJ3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="25"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ3"
+            app:layout_constraintLeft_toLeftOf="@id/golesJ3"
+            app:layout_constraintRight_toRightOf="@id/golesJ3"/>
+
+        <TextView
+            android:id="@+id/promedioJ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Promedio"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador3Promedio"
+            app:layout_constraintLeft_toRightOf="@id/golesJ3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="0,83 G/P"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioJ3"
+            app:layout_constraintLeft_toLeftOf="@id/promedioJ3"
+            app:layout_constraintRight_toRightOf="@id/promedioJ3"/>
+
+        <TextView
+            android:id="@+id/golPorMinutosJ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:text="Gol cada X minutos"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador3"
+            app:layout_constraintRight_toRightOf="@id/jugador3Promedio"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:text="100 Minutos"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/styles_estadisticas"
+            app:layout_constraintTop_toBottomOf="@id/golPorMinutosJ3"
+            app:layout_constraintLeft_toLeftOf="@id/golPorMinutosJ3"
+            app:layout_constraintRight_toRightOf="@id/golPorMinutosJ3"/>
+
+        <TextView
+            android:id="@+id/nombreJugador3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Robert Lewandowski"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador3"
+            app:layout_constraintLeft_toLeftOf="@id/fotoJugador3"/>
+
+
+        <ImageView
+            android:id="@+id/escudoEquipo3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/barcelona"
+            app:layout_constraintTop_toTopOf="@id/nombreEquipoJ3"
+            app:layout_constraintLeft_toRightOf="@id/nombreEquipoJ3"
+            app:layout_constraintBottom_toBottomOf="@id/nombreEquipoJ3"/>
+
+        <TextView
+            android:id="@+id/nombreEquipoJ3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="FC Barcelona"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/nombreJugador3"
+            app:layout_constraintLeft_toLeftOf="@id/jugador3Promedio" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:elevation="11dp"
+            app:layout_constraintTop_toTopOf="@id/fotoTop3"
+            app:layout_constraintLeft_toLeftOf="@id/fotoTop3"
+            app:layout_constraintRight_toRightOf="@id/fotoTop3"
+            app:layout_constraintBottom_toBottomOf="@id/fotoTop3"/>
+
+        <ImageView
+            android:id="@+id/fotoTop3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/escudo"
+            app:layout_constraintTop_toTopOf="@id/jugador3Promedio"
+            app:layout_constraintRight_toRightOf="@id/jugador3Promedio"/>
+
+
+        <View
+            android:id="@+id/jugador4Promedio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FBFCF9"
+            android:background="@drawable/styles_edittext"
+            app:layout_constraintTop_toBottomOf="@id/jugador3Promedio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoJugador4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="10dp"
+            android:src="@drawable/ben_yedder"
+            app:layout_constraintTop_toTopOf="@id/jugador4Promedio"
+            app:layout_constraintLeft_toLeftOf="@id/jugador4Promedio" />
+
+        <TextView
+            android:id="@+id/partidosJ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="PJ"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador4Promedio"
+            app:layout_constraintLeft_toRightOf="@id/fotoJugador4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="31"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJ4"
+            app:layout_constraintLeft_toLeftOf="@id/partidosJ4"
+            app:layout_constraintRight_toRightOf="@id/partidosJ4"/>
+
+        <TextView
+            android:id="@+id/golesJ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Goles"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador4Promedio"
+            app:layout_constraintLeft_toRightOf="@id/partidosJ4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="20"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ4"
+            app:layout_constraintLeft_toLeftOf="@id/golesJ4"
+            app:layout_constraintRight_toRightOf="@id/golesJ4"/>
+
+        <TextView
+            android:id="@+id/promedioJ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Promedio"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador4Promedio"
+            app:layout_constraintLeft_toRightOf="@id/golesJ4"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="0,64 G/P"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioJ4"
+            app:layout_constraintLeft_toLeftOf="@id/promedioJ4"
+            app:layout_constraintRight_toRightOf="@id/promedioJ4"/>
+
+        <TextView
+            android:id="@+id/golPorMinutosJ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:text="Gol cada X minutos"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador4"
+            app:layout_constraintRight_toRightOf="@id/jugador4Promedio"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:text="101 Minutos"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/styles_estadisticas"
+            app:layout_constraintTop_toBottomOf="@id/golPorMinutosJ4"
+            app:layout_constraintLeft_toLeftOf="@id/golPorMinutosJ4"
+            app:layout_constraintRight_toRightOf="@id/golPorMinutosJ4"/>
+
+        <TextView
+            android:id="@+id/nombreJugador4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Wissam Ben Yedder"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador4"
+            app:layout_constraintLeft_toLeftOf="@id/fotoJugador4"/>
+
+
+        <ImageView
+            android:id="@+id/escudoEquipo4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/monaco"
+            app:layout_constraintTop_toTopOf="@id/nombreEquipoJ4"
+            app:layout_constraintLeft_toRightOf="@id/nombreEquipoJ4"
+            app:layout_constraintBottom_toBottomOf="@id/nombreEquipoJ4"/>
+
+        <TextView
+            android:id="@+id/nombreEquipoJ4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Mónaco"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/nombreJugador4"
+            app:layout_constraintLeft_toLeftOf="@id/jugador4Promedio" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:elevation="11dp"
+            app:layout_constraintTop_toTopOf="@id/fotoTop4"
+            app:layout_constraintLeft_toLeftOf="@id/fotoTop4"
+            app:layout_constraintRight_toRightOf="@id/fotoTop4"
+            app:layout_constraintBottom_toBottomOf="@id/fotoTop4"/>
+
+        <ImageView
+            android:id="@+id/fotoTop4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/escudo"
+            app:layout_constraintTop_toTopOf="@id/jugador4Promedio"
+            app:layout_constraintRight_toRightOf="@id/jugador4Promedio"/>
+
+        <View
+            android:id="@+id/jugador5Promedio"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="10dp"
+            android:backgroundTint="#FBFCF9"
+            android:background="@drawable/styles_edittext"
+            app:layout_constraintTop_toBottomOf="@id/jugador4Promedio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoJugador5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:elevation="10dp"
+            android:src="@drawable/rashford"
+            app:layout_constraintTop_toTopOf="@id/jugador5Promedio"
+            app:layout_constraintLeft_toLeftOf="@id/jugador5Promedio" />
+
+        <TextView
+            android:id="@+id/partidosJ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="PJ"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador5Promedio"
+            app:layout_constraintLeft_toRightOf="@id/fotoJugador5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="37"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJ5"
+            app:layout_constraintLeft_toLeftOf="@id/partidosJ5"
+            app:layout_constraintRight_toRightOf="@id/partidosJ5"/>
+
+        <TextView
+            android:id="@+id/golesJ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Goles"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador5Promedio"
+            app:layout_constraintLeft_toRightOf="@id/partidosJ5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="24"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ5"
+            app:layout_constraintLeft_toLeftOf="@id/golesJ5"
+            app:layout_constraintRight_toRightOf="@id/golesJ5"/>
+
+        <TextView
+            android:id="@+id/promedioJ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:elevation="10dp"
+            android:text="Promedio"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/jugador5Promedio"
+            app:layout_constraintLeft_toRightOf="@id/golesJ5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:elevation="10dp"
+            android:text="0,64 G/P"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioJ5"
+            app:layout_constraintLeft_toLeftOf="@id/promedioJ5"
+            app:layout_constraintRight_toRightOf="@id/promedioJ5"/>
+
+        <TextView
+            android:id="@+id/golPorMinutosJ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:text="Gol cada X minutos"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador5"
+            app:layout_constraintRight_toRightOf="@id/jugador5Promedio"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:elevation="10dp"
+            android:text="116 Minutos"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@drawable/styles_estadisticas"
+            app:layout_constraintTop_toBottomOf="@id/golPorMinutosJ5"
+            app:layout_constraintLeft_toLeftOf="@id/golPorMinutosJ5"
+            app:layout_constraintRight_toRightOf="@id/golPorMinutosJ5"/>
+
+        <TextView
+            android:id="@+id/nombreJugador5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Marcus Rashford"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/fotoJugador5"
+            app:layout_constraintLeft_toLeftOf="@id/fotoJugador5"/>
+
+
+        <ImageView
+            android:id="@+id/escudoEquipo5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:src="@drawable/manchester_united"
+            app:layout_constraintTop_toTopOf="@id/nombreEquipoJ5"
+            app:layout_constraintLeft_toRightOf="@id/nombreEquipoJ5"
+            app:layout_constraintBottom_toBottomOf="@id/nombreEquipoJ5"/>
+
+        <TextView
+            android:id="@+id/nombreEquipoJ5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:elevation="10dp"
+            android:text="Manchester United"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/nombreJugador5"
+            app:layout_constraintLeft_toLeftOf="@id/jugador5Promedio" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:elevation="11dp"
+            app:layout_constraintTop_toTopOf="@id/fotoTop5"
+            app:layout_constraintLeft_toLeftOf="@id/fotoTop5"
+            app:layout_constraintRight_toRightOf="@id/fotoTop5"
+            app:layout_constraintBottom_toBottomOf="@id/fotoTop5"/>
+
+        <ImageView
+            android:id="@+id/fotoTop5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:elevation="10dp"
+            android:src="@drawable/escudo"
+            app:layout_constraintTop_toTopOf="@id/jugador5Promedio"
+            app:layout_constraintRight_toRightOf="@id/jugador5Promedio"/>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
+
+

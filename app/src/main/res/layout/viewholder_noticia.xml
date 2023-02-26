@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fotoNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/bordesNoticias"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tituloNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/fotoNoticia"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/fotoWebNoticia"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            app:layout_constraintTop_toBottomOf="@id/tituloNoticia"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/nombreWebNoticia"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="@id/fotoWebNoticia"
+            app:layout_constraintLeft_toRightOf="@id/fotoWebNoticia"
+            app:layout_constraintBottom_toBottomOf="@id/fotoWebNoticia"/>
+
+        <TextView
+            android:id="@+id/tiempoNoticia"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            app:layout_constraintTop_toTopOf="@id/fotoWebNoticia"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/fotoWebNoticia"/>
+
+        <View
+            android:id="@+id/separacion"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

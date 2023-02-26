@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MostrarDuelos">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <ImageView
+            android:id="@+id/jugador1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/fondoDuelosJ1"
+            app:layout_constraintRight_toRightOf="@id/fondoDuelosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/fondoDuelosJ1"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fondoDuelosJ1"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/bordes"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/fondoDuelosJ2"/>
+
+        <ImageView
+            android:id="@+id/jugador2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="5dp"
+            app:layout_constraintLeft_toLeftOf="@id/fondoDuelosJ2"
+            app:layout_constraintRight_toRightOf="@id/fondoDuelosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/fondoDuelosJ2"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fondoDuelosJ2"
+            android:layout_width="160dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/bordes"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/fondoDuelosJ1"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/nombreJ1Duelo"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fondoDuelosJ1"
+            app:layout_constraintLeft_toLeftOf="@id/fondoDuelosJ1"
+            app:layout_constraintRight_toRightOf="@id/fondoDuelosJ1"/>
+
+        <TextView
+            android:id="@+id/nombreJ2Duelo"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/fondoDuelosJ2"
+            app:layout_constraintLeft_toLeftOf="@id/fondoDuelosJ2"
+            app:layout_constraintRight_toRightOf="@id/fondoDuelosJ2"/>
+
+
+        <TextView
+            android:id="@+id/estadisticasGenerales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Estadisticas Generales"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/nombreJ1Duelo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/partidosJugadosJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Partidos "
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasGenerales"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numPartidosJ1"/>
+
+        <TextView
+            android:id="@+id/numPartidosJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="125dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasGenerales"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/partidosJugadosJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Partidos"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasGenerales"
+            app:layout_constraintLeft_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numPartidosJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="125dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasGenerales"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/golesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Goles "
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJugadosJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numGolesJ1"/>
+
+        <TextView
+            android:id="@+id/numGolesJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/golesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/golesJ1"/>
+
+        <TextView
+            android:id="@+id/golesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Goles"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/partidosJugadosJ2"
+            app:layout_constraintLeft_toRightOf="@id/numGolesJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numGolesJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/golesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/golesJ2"/>
+
+        <TextView
+            android:id="@+id/asistenciasJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Asistencias"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numAsistenciasJ1"/>
+
+        <TextView
+            android:id="@+id/numAsistenciasJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/asistenciasJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/asistenciasJ1"/>
+
+        <TextView
+            android:id="@+id/asistenciasJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Asistencias"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/golesJ2"
+            app:layout_constraintLeft_toRightOf="@id/numAsistenciasJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numAsistenciasJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/asistenciasJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/asistenciasJ2"/>
+
+        <TextView
+            android:id="@+id/minutosJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Minutos\ntotales"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/asistenciasJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numMinutosJ1"/>
+
+        <TextView
+            android:id="@+id/numMinutosJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/minutosJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/minutosJ1"/>
+
+        <TextView
+            android:id="@+id/minutosJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Minutos \ntotales"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/asistenciasJ2"
+            app:layout_constraintLeft_toRightOf="@id/numMinutosJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numMinutosJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/minutosJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/minutosJ2"/>
+
+        <TextView
+            android:id="@+id/estadisticasAtaque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Ataque"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/minutosJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/promedioGolesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Promedio\nGoleador"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasAtaque"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numPromedioJ1"/>
+
+        <TextView
+            android:id="@+id/numPromedioJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/promedioGolesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/promedioGolesJ1"/>
+
+        <TextView
+            android:id="@+id/promedioGolesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Promedio\nGoleador"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasAtaque"
+            app:layout_constraintLeft_toRightOf="@id/numPromedioJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numPromedioJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/promedioGolesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/promedioGolesJ2"/>
+
+        <TextView
+            android:id="@+id/precisionTiroJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Precisión \nde tiro "
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioGolesJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numPrecisionJ1"/>
+
+        <TextView
+            android:id="@+id/numPrecisionJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/precisionTiroJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/precisionTiroJ1"/>
+
+        <TextView
+            android:id="@+id/precisionTiroJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Precisión\nde tiro"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/promedioGolesJ2"
+            app:layout_constraintLeft_toRightOf="@id/numPrecisionJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numPrecisionJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/precisionTiroJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/precisionTiroJ2"/>
+
+        <TextView
+            android:id="@+id/regatesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Regates\npor partido"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/precisionTiroJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numRegatesJ1"/>
+
+        <TextView
+            android:id="@+id/numRegatesJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/regatesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/regatesJ1"/>
+
+        <TextView
+            android:id="@+id/regatesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Regates \npor partido"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/precisionTiroJ2"
+            app:layout_constraintLeft_toRightOf="@id/numRegatesJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numRegatesJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/regatesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/regatesJ2"/>
+
+        <TextView
+            android:id="@+id/regatesExitoJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Regates\ncon éxito"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/regatesJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numRegatesExitoJ1"/>
+
+        <TextView
+            android:id="@+id/numRegatesExitoJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/regatesExitoJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/regatesExitoJ1"/>
+
+        <TextView
+            android:id="@+id/regatesExitoJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Regates \ncon éxito"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/regatesJ2"
+            app:layout_constraintLeft_toRightOf="@id/numRegatesExitoJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numRegatesExitoJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/regatesExitoJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/regatesExitoJ2"/>
+
+
+        <TextView
+            android:id="@+id/estadisticasDefensa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Defensa"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/regatesExitoJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/recuperacionesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Balones\nrecuperados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasDefensa"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numRecuperacionesJ1"/>
+
+        <TextView
+            android:id="@+id/numRecuperacionesJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/recuperacionesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/recuperacionesJ1"/>
+
+        <TextView
+            android:id="@+id/recuperacionesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Balones\nrecuperados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/estadisticasDefensa"
+            app:layout_constraintLeft_toRightOf="@id/numRecuperacionesJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numRecuperacionesJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/recuperacionesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/recuperacionesJ2"/>
+
+        <TextView
+            android:id="@+id/duelosGanadosJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Duelos \nganados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/recuperacionesJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numDuelosGanadosJ1"/>
+
+        <TextView
+            android:id="@+id/numDuelosGanadosJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/duelosGanadosJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/duelosGanadosJ1"/>
+
+        <TextView
+            android:id="@+id/duelosGanadosJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Duelos\nganados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/recuperacionesJ2"
+            app:layout_constraintLeft_toRightOf="@id/numDuelosGanadosJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numDuelosGanadosJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/duelosGanadosJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/duelosGanadosJ2"/>
+
+        <TextView
+            android:id="@+id/intercepcionesJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Balones \nInterceptados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/duelosGanadosJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numIntercepcionesJ1"/>
+
+        <TextView
+            android:id="@+id/numIntercepcionesJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/intercepcionesJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/intercepcionesJ1"/>
+
+        <TextView
+            android:id="@+id/intercepcionesJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Balones \nInterceptados"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/duelosGanadosJ2"
+            app:layout_constraintLeft_toRightOf="@id/numIntercepcionesJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numIntercepcionesJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/intercepcionesJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/intercepcionesJ2"/>
+
+        <TextView
+            android:id="@+id/entradasExitoJ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Entradas\ncon éxito"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/intercepcionesJ1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/numEntradasExitoJ1"/>
+
+        <TextView
+            android:id="@+id/numEntradasExitoJ1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/entradasExitoJ1"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ1"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ1"
+            app:layout_constraintBottom_toBottomOf="@id/entradasExitoJ1"/>
+
+        <TextView
+            android:id="@+id/entradasExitoJ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Entradas \ncon éxito"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/intercepcionesJ2"
+            app:layout_constraintLeft_toRightOf="@id/numEntradasExitoJ2"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/numEntradasExitoJ2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="@drawable/styles_estadisticas"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/entradasExitoJ2"
+            app:layout_constraintLeft_toLeftOf="@id/numPartidosJ2"
+            app:layout_constraintRight_toRightOf="@id/numPartidosJ2"
+            app:layout_constraintBottom_toBottomOf="@id/entradasExitoJ2"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
+
+

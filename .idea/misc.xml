@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/drawable-v24/vista_circular.xml" value="0.158" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/activity_inicio.xml" value="0.10196406184705391" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/activity_main.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/drawer_header.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_beneficio.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_calcular_promedio.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_info1.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_info2.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_info3.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_jugadores.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_mostrar_duelos.xml" value="0.10196406184705391" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_mostrar_jugadores.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/fragment_tabbed.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/mejores_promedio_goleador.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/layout/viewholder_duelos.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/COPIA-PROYECTO-FINAL/MP08ProyectoUF1-2/app/src/main/res/menu/drawer_menu.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/drawable/inicio.xml" value="0.155" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/drawable/jugadores.xml" value="0.1" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/drawable/styles_edittext.xml" value="0.169" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/drawable/styles_estadisticas.xml" value="0.1735" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/drawable/styles_imagebutton.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/activity_calculadora.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/activity_inicio.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/activity_main.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/drawer_header.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_beneficio.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_comision.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_duelos.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_info1.xml" value="0.2" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_info2.xml" value="0.19084315503173163" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_info3.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_info4.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_inicio.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_jugadores.xml" value="0.13508612873980055" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_mostrar_duelos.xml" value="0.25115800308800823" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_mostrar_jugadores.xml" value="0.21535745807590467" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_mostrar_noticias.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_noticias.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/fragment_tabbed.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/mejores_promedio_goleador.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/viewholder_duelos.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/viewholder_jugador.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/layout/viewholder_noticia.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/Android/MP08ProyectoUF1/app/src/main/res/menu/drawer_menu.xml" value="0.20863616930312098" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/drawable/calculadora.xml" value="0.148" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/drawable/styles_edittext.xml" value="0.1705" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/activity_calculadora.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/activity_main2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/drawer_header.xml" value="0.13644605621033545" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/fragment_beneficio.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/fragment_comision.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/fragment_inicio.xml" value="0.264" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/fragment_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/layout/fragment_tabbed.xml" value="0.19084315503173163" />
+        <entry key="..\:/Users/ivall/Documents/MP08ProyectoUF1/app/src/main/res/menu/drawer_menu.xml" value="0.19709277469003847" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inicio_graph"
+    app:startDestination="@id/noticias">
+
+    <fragment
+        android:id="@+id/mostrarJugadores"
+        android:name="com.example.mp08_proyectouf1.MostrarJugadores"
+        android:label="Jugador"
+        tools:layout="@layout/fragment_mostrar_jugadores" />
+    <fragment
+        android:id="@+id/mostrarDuelos"
+        android:name="com.example.mp08_proyectouf1.MostrarDuelos"
+        android:label=""
+        tools:layout="@layout/fragment_mostrar_duelos" />
+    <fragment
+        android:id="@+id/mostrarNoticias"
+        android:name="com.example.mp08_proyectouf1.MostrarNoticias"
+        android:label="Noticia"
+        tools:layout="@layout/fragment_mostrar_noticias" />
+    <fragment
+        android:id="@+id/noticias"
+        android:name="com.example.mp08_proyectouf1.Noticias"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_noticias">
+        <action
+            android:id="@+id/action_noticias_to_mostrarNoticias"
+            app:destination="@id/mostrarNoticias" />
+    </fragment>
+    <fragment
+        android:id="@+id/jugadores"
+        android:name="com.example.mp08_proyectouf1.Jugadores"
+        android:label="Mayor valor de mercado"
+        tools:layout="@layout/fragment_jugadores">
+        <action
+            android:id="@+id/action_jugadores_to_mostrarJugadores"
+            app:destination="@id/mostrarJugadores" />
+    </fragment>
+    <fragment
+        android:id="@+id/duelos"
+        android:name="com.example.mp08_proyectouf1.Duelos"
+        android:label="Duelos"
+        tools:layout="@layout/fragment_duelos">
+        <action
+            android:id="@+id/action_duelos_to_mostrarDuelos"
+            app:destination="@id/mostrarDuelos" />
+    </fragment>
+    <fragment
+        android:id="@+id/tabbed"
+        android:name="com.example.mp08_proyectouf1.Tabbed"
+        android:label="Promedio Goles"
+        tools:layout="@layout/fragment_tabbed" />
+
+</navigation>
